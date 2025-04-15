@@ -1,0 +1,50 @@
+/* src/components/Header.css */
+
+/* 헤더 전체 스타일 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* 헤더 왼쪽 - 햄버거 메뉴 영역 */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+/* 햄버거 메뉴 (CSS로 구성) */
+.hamburger {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: background-color 0.3s;
+}
+
+/* 헤더 오른쪽 - 아이콘 영역 */
+.header-right {
+  display: flex;
+  gap: 15px;
+}
+
+/* 아이콘 버튼 기본 스타일 */
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  padding: 5px;
+}
