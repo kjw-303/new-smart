@@ -4,7 +4,7 @@
 
 .joinTitle {
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .inputField {
@@ -18,4 +18,14 @@ label {
   font-size: 1.2rem;
   display: block;
   margin-bottom: 0.2rem;
+}
+
+.btnJoin {
+  width: 100%;
+  background: #0A4189;
+  color: #fff;
+  height: 54px;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
