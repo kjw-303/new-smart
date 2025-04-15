@@ -44,6 +44,9 @@ const Login = () => {
           로그인
         </button>
       </form>
+      <button className="btnJoin" onClick={() => navigate("/join")}>
+        회원가입
+      </button>
     </div>
   );
 };

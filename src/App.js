@@ -4,6 +4,7 @@ import CategorySelector from "./components/CategorySelector";
 import Login from "./components/Login";
 import MainPage from "./components/MainPage";
 import Sitemap from "./components/Sitemap";
+import Join from "./components/Join";
 import { SelectionProvider } from "./context/SelectionContext";
 import { AuthProvider, useAuth } from "./context/AuthContext";
 import "./App.css";
@@ -21,6 +22,7 @@ function AppRoutes() {
           element={user ? <MainPage /> : <Navigate to="/login" replace />}
         />
         <Route path="/sitemap" element={<Sitemap />} />
+        <Route path="/join" element={<Join />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>
