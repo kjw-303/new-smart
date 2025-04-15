@@ -20,7 +20,7 @@ const Header = () => {
       <div className="header-right">
         {/* 알람 아이콘 */}
         <button className="icon-button">
-          <FaBell size={20} />
+          <FaBell size={21} />
         </button>
         {/* 마이페이지 아이콘 */}
         <button className="icon-button">
