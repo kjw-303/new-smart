@@ -3,7 +3,6 @@ import PasswordInput from "./join/PasswordInput";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
-
 import "../css/Join.css";
 
 function Join() {
@@ -33,7 +32,7 @@ function Join() {
       <div>
         <IoIosArrowBack
           size={25}
-          className="float-left"
+          className="absolute"
           onClick={() => navigate("/login")}
         />
         <h1 className="joinTitle">회원가입</h1>
@@ -73,6 +72,10 @@ function Join() {
           가입하기
         </button>
       </form>
+      <div className="joinLoginTxt">
+        이미 계정이 있으신가요?{" "}
+        <span onClick={() => navigate("/login")}>로그인하세요</span>
+      </div>
     </div>
   );
 }
