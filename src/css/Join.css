@@ -22,12 +22,16 @@ label {
 
 .btnJoin {
   width: 100%;
-  background: #0A4189;
+  background: #797979;
   color: #fff;
   height: 54px;
   border-radius: 0.8rem;
   font-size: 1.6rem;
   font-weight: 600;
+}
+
+.btnJoin.active {
+  background: #0A4189;
 }
 
 .joinLoginTxt {

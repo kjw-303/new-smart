@@ -1,9 +1,35 @@
 import React from "react";
-import PasswordInput from "./join/PasswordInput";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import "../css/Join.css";
+
+//비밀번호 component
+function PasswordInput({ label, value, onChange }) {
+  const [showPassword, setShowPassword] = useState(false);
+
+  return (
+    <div className="text-left mb-6">
+      <label>{label}</label>
+      <div className="relative">
+        <input
+          type={showPassword ? "text" : "password"}
+          className="inputField pr-10"
+          placeholder={`${label}를 입력하세요`}
+          value={value}
+          onChange={onChange}
+        />
+        <span
+          className="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer block"
+          onClick={() => setShowPassword(!showPassword)}
+        >
+          {showPassword ? <FaRegEyeSlash size={17} /> : <FaRegEye size={17} />}
+        </span>
+      </div>
+    </div>
+  );
+}
 
 function Join() {
   const navigate = useNavigate();
@@ -11,6 +37,7 @@ function Join() {
   const [password, setPassword] = useState("");
   const [passwordCheck, setPasswordCheck] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [activeBtn, setActiveBtn] = useState(false);
 
   const handleJoinSubmit = (e) => {
     e.preventDefault();
@@ -26,6 +53,12 @@ function Join() {
 
     navigate("/login");
   };
+
+  //값 다 있으면 버튼 활성화
+  useEffect(() => {
+    const isAllFilled = username && password && passwordCheck && phoneNumber;
+    setActiveBtn(isAllFilled);
+  }, [username, password, passwordCheck, phoneNumber]);
 
   return (
     <div className="joinWrap">
@@ -68,7 +101,10 @@ function Join() {
           value={passwordCheck}
           onChange={(e) => setPasswordCheck(e.target.value)}
         />
-        <button type="submit" className="btnJoin">
+        <button
+          type="submit"
+          className={activeBtn ? "btnJoin active" : "btnJoin"}
+        >
           가입하기
         </button>
       </form>
