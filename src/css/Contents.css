@@ -36,7 +36,7 @@
   padding: 1rem;
   border-radius: 0.5rem;
   background: #fff;
-  color: #000;
+  color: #100404;
 }
 
 .btnJoin {
@@ -47,4 +47,27 @@
   color: #fff;
   font-size: 1.4rem;
   display: block;
+}
+.sitemapContainer {
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+.sitemapContainer .categoryBox {
+  margin-top: 2rem;
+}
+.sitemapContainer h2 {
+  font-weight: bold;
+  color: rgb(215, 36, 215);
+}
+.sitemapContainer .subitem {
+  margin: 0.5rem 0;
+}
+.sitemapContainer .childItem {
+  display: flex;
+  align-items: center;
+  color: dimgray;
+}
+.subitemChildren .subitemLabel ~ ul {
+  margin: 0.3rem 0;
 }
