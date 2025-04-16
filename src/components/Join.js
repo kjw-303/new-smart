@@ -103,7 +103,7 @@ function Join() {
         />
         <button
           type="submit"
-          className={activeBtn ? "btnJoin active" : "btnJoin"}
+          className={activeBtn ? "btnRegist active" : "btnRegist"}
         >
           가입하기
         </button>

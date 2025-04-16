@@ -20,7 +20,7 @@ label {
   margin-bottom: 0.2rem;
 }
 
-.btnJoin {
+.btnRegist {
   width: 100%;
   background: #797979;
   color: #fff;
@@ -31,7 +31,7 @@ label {
   transition: all .5s;
 }
 
-.btnJoin.active {
+.btnRegist.active {
   background: #0A4189;
 }
 
