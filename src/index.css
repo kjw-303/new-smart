@@ -5,6 +5,9 @@
 html {
   font-size: 62.5%;
 }
+body {
+  font-family: "SUIT Variable", sans-serif;
+}
 /* common */
 select {
   padding: 0.5rem 1rem;

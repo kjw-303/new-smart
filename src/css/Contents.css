@@ -48,6 +48,7 @@
   font-size: 1.4rem;
   display: block;
 }
+/* sitemap */
 .sitemapContainer {
   text-align: left;
   font-size: 1.5rem;
@@ -70,4 +71,77 @@
 }
 .subitemChildren .subitemLabel ~ ul {
   margin: 0.3rem 0;
+}
+
+/* notice roller */
+.noticeBanner {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  padding: 1rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.noticeTitle {
+  font-weight: bold;
+  padding-right: 1rem;
+  white-space: nowrap;
+  font-size: 1.4rem;
+}
+.noticeRollerContainer {
+  overflow: hidden;
+  height: 3rem;
+  flex: 1;
+}
+.noticeRoller {
+  display: flex;
+  flex-direction: column;
+  animation: roll 15s infinite;
+}
+.noticeItem {
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes roll {
+  0% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-30px);
+  }
+  35% {
+    transform: translateY(-30px);
+  }
+  40% {
+    transform: translateY(-60px);
+  }
+  55% {
+    transform: translateY(-60px);
+  }
+  60% {
+    transform: translateY(-90px);
+  }
+  75% {
+    transform: translateY(-90px);
+  }
+  80% {
+    transform: translateY(-120px);
+  }
+  95% {
+    transform: translateY(-120px);
+  }
+  100% {
+    transform: translateY(-150px);
+  }
 }
