@@ -3,7 +3,7 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import CategorySelector from "./components/CategorySelector";
 import Login from "./components/Login";
 import MainPage from "./components/MainPage";
-import SiteMap from "./components/SiteMap";
+import SiteMaps from "./components/SiteMaps";
 import Join from "./components/Join";
 import { SelectionProvider } from "./context/SelectionContext";
 import { AuthProvider, useAuth } from "./context/AuthContext";
@@ -21,7 +21,7 @@ function AppRoutes() {
           path="/main"
           element={user ? <MainPage /> : <Navigate to="/login" replace />}
         />
-        <Route path="/sitemap" element={<SiteMap />} />
+        <Route path="/sitemaps" element={<SiteMaps />} />
         <Route path="/join" element={<Join />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

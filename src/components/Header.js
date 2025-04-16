@@ -11,7 +11,7 @@ const Header = () => {
     <header className="header">
       <div className="header-left">
         {/* 햄버거 메뉴 */}
-        <div className="hamburger" onClick={() => navigate("/sitemap")}>
+        <div className="hamburger" onClick={() => navigate("/sitemaps")}>
           <span></span>
           <span></span>
           <span></span>
