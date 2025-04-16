@@ -3,7 +3,7 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import CategorySelector from "./components/CategorySelector";
 import Login from "./components/Login";
 import MainPage from "./components/MainPage";
-import SiteMap from "./components/temp";
+import SiteMap from "./components/SiteMap";
 import Join from "./components/Join";
 import { SelectionProvider } from "./context/SelectionContext";
 import { AuthProvider, useAuth } from "./context/AuthContext";
