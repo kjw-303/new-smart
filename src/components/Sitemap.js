@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { GoChevronLeft } from "react-icons/go";
 import UserInfo from "./UserInfo";
 import AdSlider from "./AdSlider";
+import { useNavigate } from "react-router-dom";
+import { GoX } from "react-icons/go";
 
 const stieMapData = [
   {
@@ -53,8 +55,17 @@ const stieMapData = [
 ];
 
 const SiteMap = () => {
+  // 닫기 버튼
+  const navigate = useNavigate();
+  const handleClose = () => {
+    navigate("/main");
+  };
+
   return (
     <div className="sitemapContainer">
+      <div className="flex justify-end" onClick={handleClose}>
+        <GoX size={25} />
+      </div>
       {/* 유저 정보 */}
       <UserInfo />
       {/* 배너 광고 */}

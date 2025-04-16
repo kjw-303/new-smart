@@ -1,8 +1,14 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
 const AdSlider = () => {
   return (
@@ -10,9 +16,9 @@ const AdSlider = () => {
       <Swiper
         spaceBetween={0}
         slidesPerView={1}
-        loop={true} // 무한 슬라이드
-        autoplay={{ delay: 3000 }} // 3초마다 자동 전환
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        loop={true}
+        autoplay={{ delay: 3000 }}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         pagination={{ clickable: true }} // 도트 인디케이터 활성화
         navigation={false} // 좌우 화살표 활성화
       >
