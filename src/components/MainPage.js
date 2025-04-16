@@ -19,20 +19,22 @@ const MainPage = () => {
   return (
     <div>
       <Header />
-      {/* 공지사항 */}
-      <NoticeRoller />
-      <div className="loginfo">
-        <p className="user">{user}님, 환영합니다!</p>
-        <p className="field">
-          계열 : {field} / 지점 : {branch}
-        </p>
-        <button onClick={handleLogout} className="btnLogout">
-          로그아웃
-        </button>
-      </div>
-      <div>
-        {/* 배너 광고 */}
-        <AdSlider />
+      <div className="px-6">
+        {/* 공지사항 */}
+        <NoticeRoller />
+        <div className="loginfo">
+          <p className="user">{user}님, 환영합니다!</p>
+          <p className="field">
+            계열 : {field} / 지점 : {branch}
+          </p>
+          <button onClick={handleLogout} className="btnLogout">
+            로그아웃
+          </button>
+        </div>
+        <div>
+          {/* 배너 광고 */}
+          <AdSlider />
+        </div>
       </div>
       <main>
         <p>상세 카테고리 구역</p>

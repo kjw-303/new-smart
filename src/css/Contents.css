@@ -77,7 +77,6 @@
 .noticeBanner {
   display: flex;
   align-items: center;
-  border: 1px solid #ddd;
   background: #fafafa;
   padding: 1rem;
   width: 100%;
