@@ -8,6 +8,9 @@ import Join from "./components/Join";
 import { SelectionProvider } from "./context/SelectionContext";
 import { AuthProvider, useAuth } from "./context/AuthContext";
 import "./App.css";
+import { MenuProvider } from "./context/MenuContext";
+import MenuSettings from "./pages/MenuSettings";
+import MenuList from "./components/MenuList";
 
 function AppRoutes() {
   const { user } = useAuth();
@@ -23,6 +26,8 @@ function AppRoutes() {
         />
         <Route path="/sitemaps" element={<SiteMaps />} />
         <Route path="/join" element={<Join />} />
+        <Route path="/menu" element={<MenuList />} />
+        <Route path="/settings" element={<MenuSettings />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>
@@ -31,11 +36,13 @@ function AppRoutes() {
 
 function App() {
   return (
-    <SelectionProvider>
-      <AuthProvider>
-        <AppRoutes />
-      </AuthProvider>
-    </SelectionProvider>
+    <MenuProvider>
+      <SelectionProvider>
+        <AuthProvider>
+          <AppRoutes />
+        </AuthProvider>
+      </SelectionProvider>
+    </MenuProvider>
   );
 }
 
