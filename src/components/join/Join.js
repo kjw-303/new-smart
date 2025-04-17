@@ -1,9 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { IoIosArrowBack } from "react-icons/io";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
-import "../css/Join.css";
+import JoinHeader from "./JoinHeader";
+import "../../css/Join.css";
 
 //비밀번호 component
 function PasswordInput({ label, value, onChange }) {
@@ -62,14 +62,7 @@ function Join() {
 
   return (
     <div className="joinWrap">
-      <div>
-        <IoIosArrowBack
-          size={25}
-          className="absolute"
-          onClick={() => navigate("/login")}
-        />
-        <h1 className="joinTitle">회원가입</h1>
-      </div>
+      <JoinHeader title={"회원가입"} />
       <form className="joinForm mt-7 mb-7" onSubmit={handleJoinSubmit}>
         <div className="text-left mb-6">
           <label>이름</label>
@@ -103,7 +96,7 @@ function Join() {
         />
         <button
           type="submit"
-          className={activeBtn ? "btnRegist active" : "btnRegist"}
+          className={activeBtn ? "btnJoinDefault active" : "btnJoinDefault"}
         >
           가입하기
         </button>

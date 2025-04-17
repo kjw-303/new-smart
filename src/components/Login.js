@@ -44,9 +44,12 @@ const Login = () => {
           로그인
         </button>
       </form>
-      <button className="btnJoin" onClick={() => navigate("/join")}>
+      <div className="pwLink" onClick={() => navigate("/findPw")}>
+        비밀번호 찾기
+      </div>
+      <div className="joinLink" onClick={() => navigate("/join")}>
         회원가입
-      </button>
+      </div>
     </div>
   );
 };
