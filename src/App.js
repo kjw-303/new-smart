@@ -4,7 +4,9 @@ import CategorySelector from "./components/CategorySelector";
 import Login from "./components/Login";
 import MainPage from "./components/MainPage";
 import SiteMaps from "./components/SiteMaps";
-import Join from "./components/Join";
+import Join from "./components/join/Join";
+import FindPw from "./components/join/FindPw";
+import FindPwSend from "./components/join/FindPwSend";
 import { SelectionProvider } from "./context/SelectionContext";
 import { AuthProvider, useAuth } from "./context/AuthContext";
 import "./App.css";
@@ -23,6 +25,8 @@ function AppRoutes() {
         />
         <Route path="/sitemaps" element={<SiteMaps />} />
         <Route path="/join" element={<Join />} />
+        <Route path="/findPw" element={<FindPw />} />
+        <Route path="/findPwSend" element={<FindPwSend />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>

@@ -20,7 +20,7 @@ label {
   margin-bottom: 0.2rem;
 }
 
-.btnRegist {
+.btnJoinDefault {
   width: 100%;
   background: #969696;
   color: #fff;
@@ -31,7 +31,7 @@ label {
   transition: all .5s;
 }
 
-.btnRegist.active {
+.btnJoinDefault.active {
   background: #0A4189;
 }
 
@@ -42,4 +42,17 @@ label {
 
 .joinLoginTxt span {
   font-weight: 600;
+}
+
+.findTxt {
+  margin: 50px 0;
+}
+
+.findTxt span {
+  font-size: 1.2rem;
+  color: #8F8F8F;
+}
+
+.findTxt strong {
+  font-size: 2rem;
 }
