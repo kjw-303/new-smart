@@ -1,6 +1,7 @@
 // src/context/MenuContext.js
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { CgChanel } from "react-icons/cg";
+import { CgMathPlus } from "react-icons/cg";
 
 // 1) 상태에는 id, label만 저장
 const defaultMenuData = [
@@ -21,7 +22,7 @@ const iconMap = {
   jobs: <CgChanel size={25} />,
   exam: <CgChanel size={25} />,
   lostFound: <CgChanel size={25} />,
-  settings: <CgChanel size={25} />,
+  settings: <CgMathPlus size={25} />,
 };
 
 const MenuContext = createContext();
