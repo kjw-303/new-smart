@@ -191,13 +191,15 @@
   flex-wrap: wrap;
   font-size: 1.1rem;
 }
+.menuListContainer .menuItem {
+  margin: 0 0.8rem 1.6rem;
+}
 .menuListContainer .icon {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 6.8rem;
   height: 6.8rem;
-  margin-right: 1.6rem;
   border-radius: 100%;
-  background: darkolivegreen;
+  background: rgb(213, 243, 255);
 }
