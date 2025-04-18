@@ -2,8 +2,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
-import JoinHeader from "./JoinHeader";
-import "../../css/Join.css";
+import JoinHeader from "../components/join/JoinHeader";
+import "../css/Join.css";
 
 //비밀번호 component
 function PasswordInput({ label, value, onChange }) {

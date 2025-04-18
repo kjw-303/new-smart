@@ -1,8 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import JoinHeader from "./JoinHeader";
-import pwIcon from "../../assets/pw-find.svg";
-import "../../css/Join.css";
+import JoinHeader from "../components/join/JoinHeader";
+import pwIcon from "../assets/pw-find.svg";
+import "../css/Join.css";
 import { useNavigate } from "react-router-dom";
 
 function FindPw(props) {

@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import BottomNav from "./BottomNav";
 import AdSlider from "./AdSlider";
 import NoticeRoller from "./NoticeRoller";
 import MyClassInfo from "./MyClassInfo";
@@ -19,6 +20,7 @@ const MainPage = () => {
         {/* 바로가기 */}
         <MenuList />
       </div>
+      <BottomNav />
     </div>
   );
 };
