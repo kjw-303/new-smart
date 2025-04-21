@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { GoChevronLeft } from "react-icons/go";
-import UserInfo from "./UserInfo";
-import AdSlider from "./AdSlider";
+import UserInfo from "../components/UserInfo";
+import AdSlider from "../components/AdSlider";
 import { useNavigate } from "react-router-dom";
 import { GoX } from "react-icons/go";
 

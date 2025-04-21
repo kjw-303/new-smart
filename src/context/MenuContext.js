@@ -1,7 +1,12 @@
 // src/context/MenuContext.js
 import React, { createContext, useContext, useEffect, useState } from "react";
-import { CgChanel } from "react-icons/cg";
 import { CgMathPlus } from "react-icons/cg";
+import { CgSearchFound } from "react-icons/cg";
+import { CgSmile } from "react-icons/cg";
+import { CgNotes } from "react-icons/cg";
+import { CgReadme } from "react-icons/cg";
+import { CgTrending } from "react-icons/cg";
+import { CgShoppingBag } from "react-icons/cg";
 
 // 1) 상태에는 id, label만 저장
 const defaultMenuData = [
@@ -16,12 +21,12 @@ const defaultMenuData = [
 
 // 2) id별로 아이콘을 매핑
 const iconMap = {
-  emptyRoom: <CgChanel size={25} />,
-  reviews: <CgChanel size={25} />,
-  books: <CgChanel size={25} />,
-  jobs: <CgChanel size={25} />,
-  exam: <CgChanel size={25} />,
-  lostFound: <CgChanel size={25} />,
+  emptyRoom: <CgSearchFound size={25} />,
+  reviews: <CgSmile size={25} />,
+  books: <CgNotes size={25} />,
+  jobs: <CgReadme size={25} />,
+  exam: <CgTrending size={25} />,
+  lostFound: <CgShoppingBag size={25} />,
   settings: <CgMathPlus size={25} />,
 };
 

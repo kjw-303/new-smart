@@ -214,3 +214,163 @@
   border-radius: 100%;
   background: rgb(213, 243, 255);
 }
+.settingsContainer h2 {
+  font-size: 1.8rem;
+}
+.settingsContainer .settingsItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #ccc;
+}
+.settingsContainer .settingsActions {
+  margin-top: 1rem;
+}
+.settingsContainer .settingsActions .btn {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+/* 수강생들의 리얼후기 */
+.commonCategoryTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 1.6rem;
+}
+.commonCategoryTitle h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.commonCategoryTitle .btn {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgba(128, 128, 128, 1);
+}
+.realSlider .swiper-slide {
+  width: 20.4rem;
+  padding: 1.2rem;
+  background: #fffeed;
+  text-align: left;
+  font-size: 1.1rem;
+  margin-right: 0.8rem;
+}
+.realSlider .review {
+  height: 3.1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+}
+.realSlider .stName .name {
+  font-weight: 700;
+}
+/* 특강 */
+.specialSlider .swiper-slide {
+  width: 11.4rem;
+  margin-right: 1.2rem;
+}
+.specialSlider .poster {
+  width: 11.4rem;
+  height: 16rem;
+  background: #fffeed;
+  overflow: hidden;
+}
+.specialSlider .data {
+  margin: 0.5rem 0 0.3rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+}
+.specialSlider .title {
+  font-size: 1.4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.specialSlider .item {
+  text-align: left;
+}
+/* 추천 강의 */
+.recomSlider .swiper-slide {
+  width: 13.6rem;
+  margin-right: 1.2rem;
+}
+.recomSlider .poster {
+  width: 13.6rem;
+  height: 10rem;
+  overflow: hidden;
+}
+.recomSlider .tag {
+  display: flex;
+  align-items: centers;
+  gap: 3px;
+  margin: 0.5rem 0 0.3rem;
+}
+.recomSlider .tag .list {
+  padding: 0.2rem 0.8rem;
+  font-size: 0.8rem;
+  border-radius: 2.4rem;
+  background: #ccc;
+}
+.recomSlider .title {
+  font-size: 1.4rem;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* 게시판 */
+.tabsContainer .tabBtn {
+  margin-right: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(128, 128, 128, 1);
+}
+.tabsContainer .tabBtn.active {
+  color: rgba(30, 30, 30, 1);
+  border-bottom: 1px solid #000;
+}
+.tabsContainer .tabList {
+  text-align: left;
+}
+.RecuritSlider .swiper-slide {
+  width: 27.9rem;
+  margin-right: 1.2rem;
+  background: #fffeed;
+}
+.RecuritSlider .item {
+  display: flex;
+  align-items: center;
+}
+.RecuritSlider .poster {
+  width: 8.8rem;
+  height: 6rem;
+  margin-right: 1.4rem;
+  overflow: hidden;
+}
+.RecuritSlider .part {
+  font-size: 1.4rem;
+}
+.RecuritSlider .company {
+  font-size: 1rem;
+}
+.RecuritSlider .info {
+  flex: 1;
+  text-align: left;
+}
+.RecuritSlider .hiring {
+  position: absolute;
+  right: 1rem;
+  top: 1.64rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 2.4rem;
+  background: #ccc;
+  font-size: 0.8rem;
+  color: #fff;
+}
