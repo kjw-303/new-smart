@@ -25,7 +25,7 @@ const RecruitInfo = [
 
 const RecruitContents = () => {
   return (
-    <div className="mt-6">
+    <div className="my-6">
       <div className="RecuritSlider">
         <Swiper
           spaceBetween={0}
