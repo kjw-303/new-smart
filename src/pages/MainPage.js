@@ -8,6 +8,7 @@ import RealReview from "../components/RealReview";
 import SpecialLectures from "../components/SpecialLectures";
 import RecommendedClass from "../components/RecommendedClass";
 import BoardTabs from "../components/BoardTabs";
+import BottomNav from "../components/BottomNav";
 
 const MainPage = () => {
   return (
@@ -33,6 +34,7 @@ const MainPage = () => {
         {/* 채용정보 */}
         <BoardTabs />
       </div>
+      <BottomNav />
     </div>
   );
 };
