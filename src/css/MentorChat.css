@@ -7,10 +7,11 @@
 .mentorChatWrap {
   position: relative;
   height: 100%;
-  padding: 3rem 1rem 0;
+  padding: 2rem 1rem 0;
 }
 
 .profileWrap {
+  margin-top: 2rem;
   color: #1d1d1d;
   font-size: 1.3rem;
 }
@@ -53,8 +54,8 @@
   position: Absolute;
   left: 0;
   width: 100%;
-  height: 42%;
-  top: 30%;
+  height: 45%;
+  top: 33%;
   display: flex;
   flex-direction: column;
 }

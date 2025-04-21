@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import Header from "../components/Header";
+import { useNavigate } from "react-router-dom";
 import MentorProfile from "../components/mentor/MentorProfile";
 import MentorChatCate from "../components/mentor/MentorChatCate";
 import MentorChatArea from "../components/mentor/MentorChatArea";
+import { IoIosArrowBack } from "react-icons/io";
 import "../css/MentorChat.css";
 import mentorImg from "../assets/mentor-img.png";
 
@@ -20,11 +21,11 @@ function MentorChat() {
   };
 
   const [selectedCate, setSelectedCate] = useState(null);
-
+  const navigate = useNavigate();
   return (
     <div className="mentorWrap">
-      <Header />
       <div className="mentorChatWrap">
+        <IoIosArrowBack size={30} onClick={() => navigate(-1)} />
         <MentorProfile
           profileImg={mentorImg}
           name={"박명수"}
