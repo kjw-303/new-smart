@@ -1,0 +1,94 @@
+.mentorWrap {
+  height: 100vh;
+  background-color: rgb(162, 197, 238);
+
+}
+
+.mentorChatWrap {
+  position: relative;
+  height: 100%;
+  padding: 3rem 1rem 0;
+}
+
+.profileWrap {
+  color: #1d1d1d;
+  font-size: 1.3rem;
+}
+
+.profileWrap img {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 0px 4px 10px #00000042;
+  margin-bottom: 2rem;
+}
+
+.profileWrap .name {
+  font-size: 1.7rem;
+  margin: 0.4rem 0;
+}
+
+.mentorChatCate {
+  background: #7EA7D9;
+  font-size: 1.5rem;
+}
+
+.mentorChatCate ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mentorChatCate li {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.2rem 0;
+  border: 1px solid rgb(162, 197, 238);
+}
+
+.chataArea {
+  position: Absolute;
+  left: 0;
+  width: 100%;
+  height: 42%;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chataArea .bubble {
+  position: relative;
+  width: 70%;
+  height: auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 1rem;
+  margin-left: 2rem;
+  text-align: left;
+  font-size: 1.2rem;
+  box-shadow: 3px 3px 10px #00000042;
+}
+
+.chataArea .bubble::before {
+  content: "";
+  top: calc(50% - 8px);
+  left: -1.6rem;
+  border: 0.7em solid transparent;
+  border-right: 1em solid rgba(255, 255, 255, 0.9);
+  z-index: 0;
+  position: absolute;
+}
+
+.directInput {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.directInput input {
+  width: 100%;
+}

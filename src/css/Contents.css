@@ -185,7 +185,7 @@
 .loginfo .detail div:last-child:after {
   position: static;
   width: 0;
-  height: 0;
+  height: 1px;
 }
 .loginfo .field {
   margin: 0.8rem 0;

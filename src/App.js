@@ -4,9 +4,10 @@ import CategorySelector from "./components/CategorySelector";
 import Login from "./components/Login";
 import MainPage from "./pages/MainPage";
 import SiteMaps from "./pages/SiteMaps";
-import Join from "./components/join/Join";
-import FindPw from "./components/join/FindPw";
+import Join from "./pages/Join";
+import FindPw from "./pages/FindPw";
 import FindPwSend from "./components/join/FindPwSend";
+import MentorChat from "./pages/MentorChat";
 import { SelectionProvider } from "./context/SelectionContext";
 import { AuthProvider, useAuth } from "./context/AuthContext";
 import "./App.css";
@@ -32,6 +33,7 @@ function AppRoutes() {
         <Route path="/settings" element={<MenuSettings />} />
         <Route path="/findPw" element={<FindPw />} />
         <Route path="/findPwSend" element={<FindPwSend />} />
+        <Route path="/mentor" element={<MentorChat />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>
