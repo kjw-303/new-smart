@@ -1,13 +1,18 @@
 import React from "react";
 
-function MentorChatArea({ defaultChatList, selectedCate }) {
-  const message = selectedCate
-    ? defaultChatList[selectedCate]
-    : defaultChatList["기본멘트"];
-
+function MentorChatArea({ chatList }) {
   return (
     <div className="chataArea">
-      <div className="bubble">{message}</div>
+      {chatList.map((chat, idx) => (
+        <div
+          key={idx}
+          className={`bubble ${
+            chat.type === "mentor" ? "bubbleLeft" : "bubbleRight"
+          }`}
+        >
+          <span>{chat.message}</span>
+        </div>
+      ))}
     </div>
   );
 }

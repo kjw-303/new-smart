@@ -7,7 +7,7 @@
 .mentorChatWrap {
   position: relative;
   height: 100%;
-  padding: 2rem 1rem 0;
+  padding: 6rem 1rem 0;
 }
 
 .profileWrap {
@@ -17,8 +17,8 @@
 }
 
 .profileWrap img {
-  width: 9rem;
-  height: 9rem;
+  width: 4.8rem;
+  height: 4.8rem;
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto;
@@ -54,33 +54,56 @@
   position: Absolute;
   left: 0;
   width: 100%;
-  height: 45%;
-  top: 33%;
+  height: 40%;
+  top: 32%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  overflow-y: auto;
+  padding-bottom: 1rem;
 }
 
 .chataArea .bubble {
-  position: relative;
-  width: 70%;
-  height: auto;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 15px;
-  padding: 1rem;
-  margin-left: 2rem;
-  text-align: left;
-  font-size: 1.2rem;
-  box-shadow: 3px 3px 10px #00000042;
+  display: flex;
 }
 
-.chataArea .bubble::before {
-  content: "";
-  top: calc(50% - 8px);
-  left: -1.6rem;
-  border: 0.7em solid transparent;
-  border-right: 1em solid rgba(255, 255, 255, 0.9);
-  z-index: 0;
-  position: absolute;
+.chataArea .bubble+.bubble {
+  margin-top: 1.5rem;
+}
+
+.chataArea .bubble span {
+  position: relative;
+  height: auto;
+  padding: 1rem;
+  width: 60%;
+  font-size: 1.2rem;
+}
+
+.chataArea .bubbleLeft {
+  justify-content: flex-start;
+}
+
+.chataArea .bubbleRight {
+  justify-content: flex-end;
+}
+
+.chataArea .bubbleLeft span {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0 13px 13px 13px;
+  margin-left: 2rem;
+  text-align: left;
+  box-shadow: 2px 2px 6px #00000042;
+}
+
+.chataArea .bubbleRight span {
+  background: rgba(255, 195, 195, 0.9);
+  border-radius: 13px 0 13px 13px;
+  margin-right: 2rem;
+  text-align: left;
+  box-shadow: -2px 2px 6px #00000042;
+  width: auto;
+  text-align: right;
 }
 
 .directInput {
