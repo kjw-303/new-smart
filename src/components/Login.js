@@ -21,20 +21,20 @@ const Login = () => {
   return (
     <div className="mainBg">
       <h1>로그인</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="mx-16">
         <div>
-          <label>아이디 : </label>
+          <label className="text-left">아이디 : </label>
           <input
-            className="rounded-lg px-4 py-4"
+            className="rounded-lg px-4 py-4 w-full"
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
         </div>
         <div className="mt-4">
-          <label>비밀번호 : </label>
+          <label className="text-left">비밀번호 : </label>
           <input
-            className="rounded-lg px-4 py-4"
+            className="rounded-lg px-4 py-4 w-full"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
