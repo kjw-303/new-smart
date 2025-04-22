@@ -36,11 +36,11 @@ const CategorySelector = () => {
   return (
     <div className="mainBg">
       <h1>계열 및 지점 선택</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="mx-16">
         <div className="mt-4">
-          <label>계열 : </label>
+          <label className="text-left">계열 : </label>
           <select
-            className="rounded-lg px-4 py-4"
+            className="rounded-lg px-4 py-4 w-full"
             value={selectedField}
             onChange={(e) => setSelectedField(e.target.value)}
           >
@@ -53,9 +53,9 @@ const CategorySelector = () => {
           </select>
         </div>
         <div className="mt-4">
-          <label>지점 : </label>
+          <label className="text-left">지점 : </label>
           <select
-            className="rounded-lg px-4 py-4"
+            className="rounded-lg px-4 py-4 w-full"
             value={selectedBranch}
             onChange={(e) => setSelectedBranch(e.target.value)}
           >

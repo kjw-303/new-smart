@@ -12,7 +12,7 @@ import BottomNav from "../components/BottomNav";
 
 const MainPage = () => {
   return (
-    <div>
+    <div className="mb-40">
       <Header />
       <div className="px-6">
         {/* 공지사항 */}
