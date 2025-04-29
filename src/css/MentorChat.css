@@ -7,17 +7,18 @@
 .mentorChatWrap {
   position: relative;
   height: 100%;
-  padding: 3rem 1rem 0;
+  padding: 6rem 1rem 0;
 }
 
 .profileWrap {
+  margin-top: 2rem;
   color: #1d1d1d;
   font-size: 1.3rem;
 }
 
 .profileWrap img {
-  width: 9rem;
-  height: 9rem;
+  width: 4.8rem;
+  height: 4.8rem;
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto;
@@ -49,46 +50,88 @@
   border: 1px solid rgb(162, 197, 238);
 }
 
-.chataArea {
-  position: Absolute;
+.chatArea {
+  position: absolute;
+  top: 30%;
   left: 0;
   width: 100%;
-  height: 42%;
-  top: 30%;
+  height: 45%;
+  overflow-y: auto;
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.chatArea .spacer {
+  flex-grow: 1;
+}
+
+.chatArea .chatList {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 
-.chataArea .bubble {
+.chatArea .bubble {
+  display: flex;
+}
+
+.chatArea .bubble+.bubble {
+  margin-top: 1.5rem;
+}
+
+.chatArea .bubble span {
   position: relative;
-  width: 70%;
   height: auto;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 15px;
   padding: 1rem;
+  width: 60%;
+  font-size: 1.2rem;
+}
+
+.chatArea .bubbleLeft {
+  justify-content: flex-start;
+}
+
+.chatArea .bubbleRight {
+  justify-content: flex-end;
+}
+
+.chatArea .bubbleLeft span {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0 13px 13px 13px;
   margin-left: 2rem;
   text-align: left;
-  font-size: 1.2rem;
-  box-shadow: 3px 3px 10px #00000042;
+  box-shadow: 2px 2px 6px #00000042;
 }
 
-.chataArea .bubble::before {
-  content: "";
-  top: calc(50% - 8px);
-  left: -1.6rem;
-  border: 0.7em solid transparent;
-  border-right: 1em solid rgba(255, 255, 255, 0.9);
-  z-index: 0;
-  position: absolute;
+.chatArea .bubbleRight span {
+  background: rgba(255, 195, 195, 0.9);
+  border-radius: 13px 0 13px 13px;
+  margin-right: 2rem;
+  text-align: left;
+  box-shadow: -2px 2px 6px #00000042;
+  width: auto;
+  text-align: right;
 }
 
 .directInput {
   width: 100%;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 21.2rem;
 }
 
 .directInput input {
   width: 100%;
+  padding-right: 8rem;
+}
+
+.directInput button {
+  width: 8rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background: #f1f1f1;
+  font-size: 1.2rem;
 }
