@@ -27,6 +27,13 @@ function MentorChat() {
   const [directInputValue, setDirectInputValue] = useState("");
 
   const handleSelectCategory = (cateName) => {
+    if (cateName === "직접문의") {
+      setDirectInput(true);
+      return;
+    } else {
+      setDirectInput(false);
+    }
+
     const answer = defaultChatList[cateName];
     // 나 먼저 추가
     setChatList((prev) => [...prev, { type: "user", message: cateName }]);
@@ -34,12 +41,6 @@ function MentorChat() {
     setTimeout(() => {
       setChatList((prev) => [...prev, { type: "mentor", message: answer }]);
     }, 500);
-
-    if (cateName === "직접문의") {
-      setDirectInput(true);
-    } else {
-      setDirectInput(false);
-    }
   };
 
   const handleSendDirectMessage = () => {
@@ -50,7 +51,6 @@ function MentorChat() {
       { type: "user", message: directInputValue },
     ]);
 
-    // 멘토 답장 예시: "문의 주셔서 감사합니다" 식으로 임시 답변
     setTimeout(() => {
       setChatList((prev) => [
         ...prev,
