@@ -26,10 +26,6 @@ function MentorChatArea({ chatList }) {
           </div>
         ))}
       </div>
-      {/* <div className="directInput">
-        <input type="text" d/>
-        <button type="submit">전송</button>
-      </div> */}
     </div>
   );
 }
